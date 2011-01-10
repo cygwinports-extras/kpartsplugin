@@ -5,4 +5,4 @@ HOMEPAGE="http://www.unix-ag.uni-kl.de/~fischer/kpartsplugin/"
 SRC_URI="${HOMEPAGE}/${P}.tar.bz2"
 SRC_DIR=${PN}
 
-PATCH_URI="20100521-cmake.patch"
+PATCH_URI="20101216-cmake.patch"

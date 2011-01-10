@@ -1,0 +1,22 @@
+--- origsrc/kpartsplugin/CMakeLists.txt	2010-08-04 13:24:38.000000000 -0500
++++ src/kpartsplugin/CMakeLists.txt	2011-01-09 19:50:48.058594800 -0600
+@@ -5,7 +5,7 @@ cmake_minimum_required(VERSION 2.6)
+ find_package( Qt4 REQUIRED )
+ find_package( KDE4 REQUIRED )
+ 
+-set( PLUGIN_INSTALL_DIR "/usr/lib${LIB_SUFFIX}/nsbrowser/plugins/" )
++set( PLUGIN_INSTALL_DIR "/usr/lib${LIB_SUFFIX}/mozilla/plugins/" )
+ 
+ add_subdirectory( src )
+ 
+--- origsrc/kpartsplugin/src/CMakeLists.txt	2010-05-22 04:00:33.000000000 -0500
++++ src/kpartsplugin/src/CMakeLists.txt	2011-01-09 19:47:21.639034900 -0600
+@@ -17,7 +17,7 @@ set( kpartsplugin_LIB_SRCS
+ 	qtbrowserplugin_x11.cpp
+ )
+ 
+-kde4_add_library( kpartsplugin SHARED ${kpartsplugin_LIB_SRCS} )
++kde4_add_library( kpartsplugin MODULE ${kpartsplugin_LIB_SRCS} )
+ 
+ target_link_libraries( kpartsplugin
+ 	${QT_QTGUI_LIBRARY}
