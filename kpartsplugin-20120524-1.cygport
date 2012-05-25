@@ -3,4 +3,6 @@ inherit kde4
 DESCRIPTION="Browser plugin for embedded PDF/PS/ODF viewing using Okular and KOffice"
 HOMEPAGE="http://www.unix-ag.uni-kl.de/~fischer/kpartsplugin/"
 SRC_URI="${HOMEPAGE}/${P}.tar.bz2"
-PATCH_URI="20101216-cmake.patch"
+PATCH_URI="20120524-cmake.patch"
+
+CYGCMAKE_ARGS="-DNSPLUGIN_INSTALL_DIR=/usr/lib/mozilla/plugins"

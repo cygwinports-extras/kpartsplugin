@@ -1,0 +1,11 @@
+--- origsrc/kpartsplugin-20120524/src/CMakeLists.txt	2012-05-23 15:31:00.000000000 -0500
++++ src/kpartsplugin-20120524/src/CMakeLists.txt	2012-05-25 01:50:15.306514000 -0500
+@@ -27,7 +27,7 @@ set(
+ 
+ kde4_add_library(
+     kpartsplugin
+-    SHARED
++    MODULE
+     ${kpartsplugin_LIB_SRCS}
+ )
+ 
