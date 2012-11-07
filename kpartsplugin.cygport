@@ -1,0 +1,16 @@
+inherit kde4
+
+NAME="kpartsplugin"
+VERSION=20120723
+RELEASE=1
+CATEGORY="Web"
+SUMMARY="Browser plugin for embedded PDF/PS/ODF viewing using KDE software"
+DESCRIPTION="This software implements a plugin for Netscape-compatible browsers
+in Unix environments. This plugin uses KDE's KParts technology to embed file
+viewers (e.g. for PDF files) into non-KDE browsers."
+REQUIRES="dragonplayer okular calligra-sheets calligra-stage calligra-words"
+HOMEPAGE="http://www.unix-ag.uni-kl.de/~fischer/kpartsplugin/"
+SRC_URI="${HOMEPAGE}/${P}.tar.bz2"
+PATCH_URI="20120524-cmake.patch"
+
+CYGCMAKE_ARGS="-DNSPLUGIN_INSTALL_DIR=/usr/lib/mozilla/plugins"

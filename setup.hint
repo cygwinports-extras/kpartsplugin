@@ -1,6 +1,0 @@
-category: KDE Web
-requires: libgcc1 libkdecore5 libQtCore4 libQtGui4 libQtXml4 libstdc++6 dragonplayer okular kword kpresenter kspread
-sdesc: "Browser plugin for embedded PDF/PS/ODF viewing using Okular and KOffice"
-ldesc: "This software implements a plugin for Netscape-compatible 
-browsers in Unix environments. This plugin uses KDE's KParts technology 
-to embed file viewers (e.g. for PDF files) into non-KDE browsers."
